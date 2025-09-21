@@ -1,12 +1,10 @@
 import { cn } from "@/lib/utils";
-import { Link } from "lucide-react";
 import { FlipWords } from "./flip-words";
-import { Spotlight } from "./spotlight-new";
 
-export function GridBackground() {
+export function GridBackground({words}: {words: string[]}) {
     return (
         <div className="relative flex h-[50rem] w-full items-center justify-center flex-col bg-white dark:bg-black gap-8">
-            <Spotlight />
+            {/* <Spotlight /> */}
 
             <div
                 className={cn(
@@ -53,15 +51,10 @@ export function GridBackground() {
                 </p>
 
                 <div className="flex justify-center items-center px-4">
-                    <div className="z-20 text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+                    <div className="z-20 text-2xl sm:text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
                         I am
                         <FlipWords
-                            words={[
-                                "Software Engineer",
-                                "Web Developer",
-                                "Tech Enthusiast",
-                                "Lifelong Learner",
-                            ]}
+                            words={words}
                             className="inline-block mx-2 font-semibold text-neutral-900 dark:text-neutral-100"
                             duration={3000}
                         />

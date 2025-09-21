@@ -6,7 +6,14 @@ export default function Hero() {
     return (
         <section id="home">
             <div className="overflow-hidden relative h-[90vh] lg:h-screen">
-                <GridBackground />
+                <GridBackground words={[
+                                "Software Engineer",
+                                "Web Developer",
+                                "Freelancer",
+                                "Tech Enthusiast",
+                                "Lifelong Learner",
+                            ]}/>
+                {/* <BackgroundRippleEffect/> */}
             </div>
         </section>
     );
