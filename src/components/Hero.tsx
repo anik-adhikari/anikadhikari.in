@@ -1,5 +1,6 @@
-import React from "react";
-import { BackgroundRippleEffect } from "./ui/background-ripple-effect";
+"use client";
+ 
+// import { BackgroundRippleEffect } from "./ui/background-ripple-effect";
 import { GridBackground } from "./ui/grid-background";
 
 export default function Hero() {

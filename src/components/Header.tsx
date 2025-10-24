@@ -1,4 +1,3 @@
-import { s } from "motion/react-client";
 import React from "react";
 
 type HeaderProps = {
