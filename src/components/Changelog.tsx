@@ -24,7 +24,7 @@ export default function Changelog() {
                         Programmer | Full-time
                     </p>
                     <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-                        Tata Consultancy Services | Mumbai & Chennai, India
+                        Tata Consultancy Services (TCS) | Mumbai & Chennai, India
                     </p>
                 </div>
             ),

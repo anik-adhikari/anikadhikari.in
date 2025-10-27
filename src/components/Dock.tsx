@@ -65,8 +65,8 @@ export function Dock() {
     return (
         <div>
             <FloatingDock
-                desktopClassName="fixed bottom-8 left-1/2 -translate-x-1/2"
-                mobileClassName="fixed bottom-8 right-8"
+                desktopClassName="fixed bottom-8 left-1/2 -translate-x-1/2 z-100"
+                mobileClassName="fixed bottom-8 right-8 z-100"
                 items={links}
             />
         </div>
