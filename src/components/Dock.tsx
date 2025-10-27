@@ -1,11 +1,12 @@
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
+    IconBasketCode,
     IconBrandGithub,
+    IconBrandLinkedin,
     IconBrandX,
     IconExchange,
     IconHome,
-    IconNewSection,
-    IconTerminal2,
+    IconUser,
 } from "@tabler/icons-react";
 
 export function Dock() {
@@ -19,59 +20,53 @@ export function Dock() {
         },
 
         {
-            title: "Products",
+            title: "About Me",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconUser className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
-        },
-        {
-            title: "Components",
-            icon: (
-                <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-        {
-            title: "Aceternity UI",
-            icon: (
-                <img
-                    src="https://assets.aceternity.com/logo-dark.png"
-                    width={20}
-                    height={20}
-                    alt="Aceternity Logo"
-                />
-            ),
-            href: "#",
+            href: "#about",
         },
         {
             title: "Changelog",
             icon: (
                 <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "#changelog",
         },
-
+        {
+            title: "Projects",
+            icon: (
+                <IconBasketCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+            href: "#projects",
+        },
         {
             title: "Twitter",
             icon: (
                 <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://twitter.com/imanikadhikari",
         },
         {
             title: "GitHub",
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/anik-adhikari",
+        },
+        {
+            title: "LinkedIn",
+            icon: (
+                <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+            href: "https://www.linkedin.com/in/anikadhikari",
         },
     ];
     return (
         <div>
             <FloatingDock
                 desktopClassName="fixed bottom-8 left-1/2 -translate-x-1/2"
-            mobileClassName="fixed bottom-8 right-8"
+                mobileClassName="fixed bottom-8 right-8"
                 items={links}
             />
         </div>

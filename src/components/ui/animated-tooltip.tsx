@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState, useRef } from "react";
 import {
-  motion,
-  useTransform,
   AnimatePresence,
+  motion,
   useMotionValue,
   useSpring,
+  useTransform,
 } from "motion/react";
+import { useRef, useState } from "react";
 
 export const AnimatedTooltip = ({
   items,
@@ -17,6 +17,7 @@ export const AnimatedTooltip = ({
     name: string;
     designation: string;
     image: string;
+    url: string;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -52,6 +53,7 @@ export const AnimatedTooltip = ({
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onClick={() => window.open(item.url, "_blank")}
         >
           <AnimatePresence>
             {hoveredIndex === item.id && (

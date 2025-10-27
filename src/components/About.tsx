@@ -5,46 +5,51 @@ import {
     IconTableColumn,
 } from "@tabler/icons-react";
 import Header from "./Header";
-import { TimelineDemo } from "./Timeline";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 const socials = [
     {
         id: 1,
-        name: "John Doe",
-        designation: "Software Engineer",
-        image: "/rounded-icon/email.png",
+        name: "Telegram",
+        designation: "@AnikAdhikari",
+        image: "/rounded-icon/telegram.png",
+        url: "https://t.me/AnikAdhikari"
     },
     {
         id: 2,
-        name: "Robert Johnson",
-        designation: "Product Manager",
-        image: "/rounded-icon/github.png",
+        name: "Instagram",
+        designation: "@imanikadhikari",
+        image: "/rounded-icon/instagram.png",
+        url: "https://www.instagram.com/imanikadhikari"
     },
     {
         id: 3,
-        name: "Jane Smith",
-        designation: "Data Scientist",
-        image: "/rounded-icon/linkedin.png",
+        name: "X (Twitter)",
+        designation: "@imanikadhikari",
+        image: "/rounded-icon/twitter.png",
+        url: "https://twitter.com/imanikadhikari"
     },
     {
         id: 4,
-        name: "Emily Davis",
-        designation: "UX Designer",
-        image: "/rounded-icon/twitter.png",
+        name: "LinkedIn",
+        designation: "@anikadhikari",
+        image: "/rounded-icon/linkedin.png",
+        url: "https://www.linkedin.com/in/anikadhikari"
     },
     {
         id: 5,
-        name: "Tyler Durden",
-        designation: "Soap Developer",
-        image: "/rounded-icon/instagram.png",
+        name: "GitHub",
+        designation: "@anik-adhikari",
+        image: "/rounded-icon/github.png",
+        url: "https://github.com/anik-adhikari"
     },
     {
         id: 6,
-        name: "Dora",
-        designation: "The Explorer",
-        image: "/rounded-icon/telegram.png",
+        name: "Email",
+        designation: "anikadhikari.dev@gmail.com",
+        image: "/rounded-icon/email.png",
+        url: "mailto:anikadhikari.dev@gmail.com"
     },
 ];
 
@@ -55,7 +60,7 @@ export default function About() {
                 title="About Me"
                 subtitle="Learn more about my journey and experiences."
             />
-            <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] mb-10">
+            <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
                 {items.map((item, i) => (
                     <BentoGridItem
                         key={i}
@@ -67,7 +72,6 @@ export default function About() {
                     />
                 ))}
             </BentoGrid>
-            <TimelineDemo />
         </section>
     );
 }

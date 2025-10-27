@@ -1,13 +1,14 @@
-import { Timeline } from "@/components/ui/timeline";
+import React from 'react'
+import { Timeline } from './ui/timeline';
 
-export function TimelineDemo() {
+export default function Changelog() {
     const data = [
         {
             title: "Jul 2025 - Present",
             content: (
                 <div>
                     <p className="mb-8 text-sm font-normal text-neutral-800 md:text-2xl dark:text-neutral-200">
-                        Master of Computer Application (MCA) | Cloud Computing
+                        Master of Computer Applications (MCA) | Cloud Computing
                     </p>
                     <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
                         Chandigarh University | Punjab, India • Distance
@@ -46,7 +47,7 @@ export function TimelineDemo() {
             content: (
                 <div>
                     <p className="mb-8 text-sm font-normal text-neutral-800 md:text-2xl dark:text-neutral-200">
-                        Bachelor of Computer Application (BCA)
+                        Bachelor of Computer Applications (BCA)
                     </p>
                     <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
                         Netaji Subhash Engineering College | Kolkata, India
@@ -55,9 +56,11 @@ export function TimelineDemo() {
             ),
         },
     ];
-    return (
-        <div className="relative w-full overflow-clip">
+  return (
+    <section id='changelog'>
+        <div className="relative w-full overflow-clip mt-10 pt-10">
             <Timeline data={data} />
         </div>
-    );
+    </section>
+  )
 }

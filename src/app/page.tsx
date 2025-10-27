@@ -1,5 +1,8 @@
 import About from "@/components/About";
+import Changelog from "@/components/Changelog";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -7,6 +10,9 @@ export default function Home() {
       <div className="max-w-4xl mx-auto mb-35">
         <Hero/>
         <About/>
+        <Changelog/>
+        <Projects/>
+        <Footer/>
       </div>
     </main>
   );
