@@ -6,7 +6,9 @@ import {
     IconBrandX,
     IconExchange,
     IconHome,
+    IconMessageCircleBolt,
     IconUser,
+    IconWritingSign,
 } from "@tabler/icons-react";
 
 export function Dock() {
@@ -39,6 +41,13 @@ export function Dock() {
                 <IconBasketCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
             href: "#projects",
+        },
+        {
+            title: "Testimonials",
+            icon: (
+                <IconWritingSign className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+            href: "#testimonials",
         },
         {
             title: "Twitter",
