@@ -3,7 +3,7 @@ import { FlipWords } from "./flip-words";
 
 export function GridBackground({words}: {words: string[]}) {
     return (
-        <div className="relative flex h-[50rem] w-full items-center justify-center flex-col bg-white dark:bg-black gap-8">
+        <div className="relative flex h-auto w-full items-center justify-center flex-col bg-white dark:bg-black gap-8">
             {/* <Spotlight /> */}
 
             <div
@@ -51,7 +51,7 @@ export function GridBackground({words}: {words: string[]}) {
                 </p>
 
                 <div className="flex justify-center items-center px-4">
-                    <div className="z-20 text-2xl sm:text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+                    <div className="z-20 text-2xl sm:text-3xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
                         I am
                         <FlipWords
                             words={words}
@@ -65,7 +65,7 @@ export function GridBackground({words}: {words: string[]}) {
             </div>
 
             <div>
-                <button className="p-[3px] relative">
+                <button className="p-[3px] m-8 relative">
                     <a href="#about">
                         <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                         <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
