@@ -6,7 +6,6 @@ import {
     IconBrandX,
     IconExchange,
     IconHome,
-    IconMessageCircleBolt,
     IconUser,
     IconWritingSign,
 } from "@tabler/icons-react";

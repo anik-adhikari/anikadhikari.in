@@ -1,8 +1,8 @@
 "use client";
 
-import { CodeBlock } from "./ui/code-block";
+import { CodeBlock as CB } from "./ui/code-block";
 
-export function CodeBlockDemo() {
+export function CodeBlock() {
     const code = 
 `{
     "success": true,
@@ -20,9 +20,9 @@ export function CodeBlockDemo() {
             { "degree": "MCA - Cloud Computing", "institution": "Chandigarh University, Punjab"},
             { "degree": "BCA", "institution": "Netaji Subhash Engineering College, Kolkata" }
         ],
-        "skills": ["MERN Stack", "Next.js", "Python", "PostgreSQL", "MySQL", "Docker", "AWS"],
+        "skills": ["MERN", "Spring Boot", "Next.js", "Python", "PostgreSQL", "Docker", "AWS"],
         "projects": [
-            { "name": "Xpress-init", "link": "https://github.com/anik-adhikari/xpress-init" },
+            { "name": "xpress-init", "link": "https://github.com/anik-adhikari/xpress-init" },
             { "name": "Varta", "link": "https://github.com/anik-adhikari/varta" }
         ],
         "certifications": [
@@ -37,7 +37,7 @@ export function CodeBlockDemo() {
 
     return (
         <div className="max-w-4xl mx-auto w-full">
-            <CodeBlock
+            <CB
                 language="json"
                 filename="anikadhikari.json"
                 highlightLines={[10, 17]}
