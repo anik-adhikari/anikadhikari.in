@@ -91,8 +91,8 @@ const items = [
         icon: <IconTools className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "Who Am I?",
-        description: "Yes, that's me! Get to know me better.",
+        title: "Yes, that's me!",
+        description: "And I love traveling other than coding.",
         header: (
             <div className="w-full h-full overflow-hidden">
                 <Image
